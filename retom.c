@@ -79,30 +79,72 @@
 
 //=================================================//
 
-void somar()
-{
-    int primeiro_array[4] = {2, 7, 22, 8};
-    int segundo_array[4] = {48, 21, 34, 12};
-    int soma_um = 0;
-    int soma_dois = 0;
-    int diferenca_arrays = 0;
+// void somar()
+// {
+//     int primeiro_array[] = {7, 5};
+//     int segundo_array[] = {5};
+//     int soma_um = 0;
+//     int soma_dois = 0;
+//     int diferenca_arrays = 0;
+//     int tamanho_array1;
+//     int tamanho_array2;
 
-    for (int i = 0; i < 4; i++)
-    {
-        soma_um = soma_um + primeiro_array[i];
-    }
+//     tamanho_array1 = sizeof(primeiro_array) / sizeof(primeiro_array[0]); 
+//     tamanho_array2 = sizeof(segundo_array) / sizeof(segundo_array[0]); 
 
-    for (int i = 0; i < 4; i++)
-    {
-        soma_dois = soma_dois + segundo_array[i];
-    }
+//     for (int i = 0; i < tamanho_array1; i++)
+//     {
+//         soma_um = soma_um + primeiro_array[i];
+//     }
+    
 
-    diferenca_arrays = soma_um - soma_dois;
+//     for (int i = 0; i < tamanho_array2 ; i++)
+//     {
+//         soma_dois = soma_dois + segundo_array[i];
+//     }
 
-    printf(" A diferenca entre os dois arrays eh: %d", diferenca_arrays);
-}
+//     diferenca_arrays = soma_um - soma_dois;
 
-int main()
-{
-    somar();
-}
+//     printf(" A diferenca entre os dois arrays eh: %d", diferenca_arrays);
+// }
+
+// int main()
+// {
+//     somar();
+// }
+
+//================ Exemplo Internet ====================//
+
+// #include <stdio.h>
+// #include <string.h>
+
+// char inverte_string(char vetor[]){
+//     char vetor_invertido[10], *p;
+//     int x, tam = 0;
+
+//     tam = strlen(vetor);
+//     p = vetor + tam - 2;
+
+//     for(x = 0; x < tam; x++){
+//         vetor_invertido[x] = *p;
+//         p--;
+//     }
+
+//     for(x = 0; x < tam; x++){
+//         printf("%c", vetor_invertido[x]);
+//     }
+
+// }
+
+// int main(){
+//     char vetor[10];
+
+//     fgets(vetor, 10, stdin);
+
+//     inverte_string(vetor);
+// }
+
+//========================================================//
+
+//o primeiro número da matriz são os números de linhas e o segundo é o número de colunas 
+
