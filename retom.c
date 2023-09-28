@@ -39,7 +39,7 @@
 //     {
 //         printf("%d ", *(ptr + i));
 //     }
-    
+
 // }
 // int main(){
 //     arrayy();
@@ -55,7 +55,7 @@
 //     {
 //         printf("%c", *(ptr + 6 - i));
 //     }
-    
+
 // }
 // int main(){
 //     inverter();
@@ -63,16 +63,46 @@
 
 //=================================================//
 
-void inverter(){
-    char palavra[7][1] = {"t","e","c","l","a","d","o"};
-    char *ptr = palavra;
+// void inverter(){
+//     char palavra[7][1] = {"t","e","c","l","a","d","o"};
+//     char *ptr = palavra;
 
-    for (char i = 0; i < 7; i++)
+//     for (char i = 0; i < 7; i++)
+//     {
+
+//     }
+
+// }
+// int main(){
+//     inverter();
+// }
+
+//=================================================//
+
+void somar()
+{
+    int primeiro_array[4] = {2, 7, 22, 8};
+    int segundo_array[4] = {48, 21, 34, 12};
+    int soma_um = 0;
+    int soma_dois = 0;
+    int diferenca_arrays = 0;
+
+    for (int i = 0; i < 4; i++)
     {
-        
+        soma_um = soma_um + primeiro_array[i];
     }
-    
+
+    for (int i = 0; i < 4; i++)
+    {
+        soma_dois = soma_dois + segundo_array[i];
+    }
+
+    diferenca_arrays = soma_um - soma_dois;
+
+    printf(" A diferenca entre os dois arrays eh: %d", diferenca_arrays);
 }
-int main(){
-    inverter();
+
+int main()
+{
+    somar();
 }
