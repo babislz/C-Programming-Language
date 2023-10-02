@@ -79,39 +79,39 @@
 
 //=================================================//
 
-// void somar()
-// {
-//     int primeiro_array[] = {7, 5};
-//     int segundo_array[] = {5};
-//     int soma_um = 0;
-//     int soma_dois = 0;
-//     int diferenca_arrays = 0;
-//     int tamanho_array1;
-//     int tamanho_array2;
+void somar()
+{
+    int primeiro_array[] = {7, 5};
+    int segundo_array[] = {5};
+    int soma_um = 0;
+    int soma_dois = 0;
+    int diferenca_arrays = 0;
+    int tamanho_array1;
+    int tamanho_array2;
 
-//     tamanho_array1 = sizeof(primeiro_array) / sizeof(primeiro_array[0]); 
-//     tamanho_array2 = sizeof(segundo_array) / sizeof(segundo_array[0]); 
+    tamanho_array1 = sizeof(primeiro_array) / sizeof(primeiro_array[0]); 
+    tamanho_array2 = sizeof(segundo_array) / sizeof(segundo_array[0]); 
 
-//     for (int i = 0; i < tamanho_array1; i++)
-//     {
-//         soma_um = soma_um + primeiro_array[i];
-//     }
+    for (int i = 0; i < tamanho_array1; i++)
+    {
+        soma_um = soma_um + primeiro_array[i];
+    }
     
 
-//     for (int i = 0; i < tamanho_array2 ; i++)
-//     {
-//         soma_dois = soma_dois + segundo_array[i];
-//     }
+    for (int i = 0; i < tamanho_array2 ; i++)
+    {
+        soma_dois = soma_dois + segundo_array[i];
+    }
 
-//     diferenca_arrays = soma_um - soma_dois;
+    diferenca_arrays = soma_um - soma_dois;
 
-//     printf(" A diferenca entre os dois arrays eh: %d", diferenca_arrays);
-// }
+    printf(" A diferenca entre os dois arrays eh: %d", diferenca_arrays);
+}
 
-// int main()
-// {
-//     somar();
-// }
+int main()
+{
+    somar();
+}
 
 //================ Exemplo Internet ====================//
 
