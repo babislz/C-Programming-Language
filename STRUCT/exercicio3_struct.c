@@ -34,7 +34,10 @@ int main(void)
     
     for (int i = 0; i < 5; i++)
     {
-        
+        if (aluno[i].nota1 > maior_nota)
+        {
+            
+        }   
     }
     
 }
