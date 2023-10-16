@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 typedef struct 
 {
@@ -18,6 +19,7 @@ int main(void)
     
     while (op != 0)
     { 
+        fflush(stdin);
         printf("1 - Adicionar novo contato \n2 - Procurar por um contato \n0 - Sair");
         printf("\nInsira o numero da operacao desejada: ");
         scanf(" %d", &op);
@@ -33,30 +35,34 @@ int main(void)
                 printf("\nInsira o numero de telefone: ");
                 scanf(" %ld", &info.telefone);
                 
-                fprintf(arquivo, "\n\nNome: %s \nEmail: %s \nTelefone: %li\n", info.nome, info.email, info.telefone);
+                fprintf(arquivo, "Nome: %s Email: %s Telefone: %li\n", info.nome, info.email, info.telefone);
                 
                 fclose(arquivo);
             }
 
             if (op == 2)
             {
+                fflush(stdin);
                 printf("Insira o nome da pessoa procurada: ");
-                scanf("%[\n]", &procurado);
+                scanf("%[^\n]s", &procurado);
                 
                 fclose(arquivo);
+
+                char buffer[1024];
                 
                 arquivo = fopen("agenda.txt", "r");
-                while (fscanf(arquivo, "Nome: %s\nEmail: %s\nTelefone: %ld\n", info.nome, info.email, &info.telefone) != NULL)
+                while (fgets(buffer, sizeof(buffer), arquivo) != NULL)
                 {
-
+                    sscanf(buffer, "Nome: %s Email: %s Telefone: %ld\n", info.nome, info.email, &info.telefone);
                     printf("%s\n", info.nome);
+
                     if (strcmp(procurado, info.nome) == 0)
                     {
                         printf("Contato encontrado: \nNome: %s \nEmail: %s \nTelefone: %li", info.nome, info.email, info.telefone);
                         break;
                     }
                 }
-            fclose(arquivo);
+                fclose(arquivo);
             }
     }
 return 0;

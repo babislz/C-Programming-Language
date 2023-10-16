@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "exercicio2_stru": "c"
+        "exercicio2_stru": "c",
+        "stdio.h": "c"
     }
 }
