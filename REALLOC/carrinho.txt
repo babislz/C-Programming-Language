@@ -1,0 +1,17 @@
+
+
+===============================================
+Modelo: mazda 
+Fabricante: ford 
+Cor: chevrolet 
+Ano: 500 
+Valor: 10
+
+===============================================
+Modelo: sdfsdfs 
+Fabricante: eeeee 
+Cor: ffff 
+Ano: 2 
+Valor: 500
+
+===============================================
