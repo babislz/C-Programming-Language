@@ -16,40 +16,46 @@ typedef struct
 
 typedef struct 
 {
-    Data;
-    Horario;
+    Data data;
+    Horario horario;
     char descricao[500];
 }Compromisso;
 
 
+
+void mada(Compromisso * misso) {
+    misso->data
+}
+
+
 int main(void)
 {
-    Horario relogio;
-    Data calendario;
     Compromisso evento;
 
+    mada(&evento);
+
     printf("Escreva o dia: ");
-    scanf(" %d", &evento.dia);
+    scanf(" %d", &evento.data.dia);
 
     printf("Escreva o mes: ");
-    scanf(" %d", &evento.mes);
+    scanf(" %d", &evento.data.mes); 
 
     printf("Escreva o ano: ");
-    scanf(" %d", &evento.ano);
+    scanf(" %d", &evento.data.ano);
 
     printf("Escreva a hora: ");
-    scanf(" %d", &evento.hora);
+    scanf(" %d", &evento.horario.hora);
 
     printf("Escreva o minuto: ");
-    scanf(" %d", &evento.minutos);
+    scanf(" %d", &evento.horario.minutos);
 
     printf("Escreva o segundo: ");
-    scanf(" %d", &evento.segundos);
+    scanf(" %d", &evento.horario.segundos);
 
     printf("Escreva uma descricao: ");
     scanf(" %[^\n]", &evento.descricao);
 
-    printf("O evento irah ocorrer no dia %d/%d/%d, as %d:%d:%d \nDescricao: %s.", evento.dia, evento.mes, evento.ano, evento.hora, evento.minutos, evento.segundos, evento.descricao);
+    printf("O evento irah ocorrer no dia %d/%d/%d, as %d:%d:%d \nDescricao: %s.", evento.data.dia, evento.data.mes, evento.data.ano, evento.horario.hora, evento.horario.minutos, evento.horario.segundos, evento.descricao);
 
     return 0;
 }
